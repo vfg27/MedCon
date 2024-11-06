@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+   <div style="background-color: #F4F7F9" >
+   <div style="text-align: center; padding-bottom: 10%; padding-top:2%">
+   <h1 style="font-size: 50px; font-style: normal; font-weight: 400; font-weight: regular; line-height: 50px; color: black; text-align: center;">INTRODUZCA SUS CREDENCIALES</h1>
+   <form name='f' th:action="@{/login}" method='POST'>
+      <table style=" margin-left: auto; margin-right: auto;">
+         <tr>
+            <td style="font-size: 25px; font-style: normal; font-weight: 400; font-weight: regular; line-height: 50px; color: black; text-align: center;">Usuario:</td>
+            <td><input type='text' name='username' value='' style="width: 300; height: 50; padding: 20; margin-top: 20" placeholder="USUARIO" pattern="[A-Za-z0-9_-]{1,15}"></td>
+         </tr>
+         <tr>
+            <td style="font-size: 25px; font-style: normal; font-weight: 400; font-weight: regular; line-height: 50px; color: black; text-align: center;">Contraseña:</td>
+            <td><input type='password' name='password' style="width: 300; height: 50; padding: 20; margin-top: 20" placeholder="CONTRASEÑA" pattern="[A-Za-z0-9_-]{1,15}"/></td>
+         </tr>
+         <tr>
+            <td style="width: 35%;">         </td> 
+            <td><input name="submit" type="submit" value="CONFIRMAR" style="box-shadow: 0 0 10px 0.05px grey; background-color: #2C6176 ; margin-top: 35; margin-right: 50; margin-left: 0; border-color: #193E4D; font-size: 40px; font-style: normal; 
+               font-weight: 400; font-weight: regular; line-height: 50px; color: white; border-radius: 40; height: 125; width: 300; align-self: center;"/></td>
+              
+      </tr>
+      </table>
+  </form>
+  </div>
+   </div>
+</body>
+</html>
